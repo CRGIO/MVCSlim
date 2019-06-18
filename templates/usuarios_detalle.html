@@ -1,0 +1,9 @@
+		<table>
+			<tr><td> ID </td><td> Usuario </td><td> Password </td></tr>
+			{% for usuario in usuarios%}
+				<tr>
+					<td> {{usuario["id"]}} </td>
+					<td> {{usuario["usuario"]}} </td>
+					<td> {{usuario["pass"]}} </td></tr>
+			{% endfor%}
+		</table>
